@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;   
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    position: absolute;
+    top: 4.5rem; 
+    right: 8rem; 
+}
+
+.menu li {
+    font-family: 'inter', serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #363636;
+    color: #F3E8D4;
+    text-decoration: none;
+    padding: 0.1rem;
+}
+
+.navEscuchanos a:visited {
+    color: #F3E8D4;
+    text-decoration: none;
+    }
+
+.navEscuchanos a:hover {
+    font-weight: 300;
+}
+
+.navEscuchanos a:link {
+    color: #F3E8D4;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    " Izquierda Derecha"
+    " Footer Footer";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 99  vh 1vh;
+
+}
+
+.contentIzquierda {
+    display: grid;
+    grid-area: Izquierda;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);;
+}
+
+.contentDerecha {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: Derecha;
+    background: linear-gradient(0deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
+    height: 100%;
+}
+
+p {
+    color: #F3E8D4;
+    width: 600px;
+    font-size: 1.6em;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 7rem;
+}
+
+.iframes {
+    position: relative;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.iframeSpoti {
+    border-radius: 12px;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.iframeYoutube {
+    border-radius: 12px;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.footerEscuchanos {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    grid-area: Footer;
+    bottom: 0px;
+    width: 100%;  
+    height: 60px;
+    background-color: #3d3c3c84;
+    }
+
+.divEscuchanos ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    gap: 18px;
+    }
+
+/*-------  TITULOS Y ELEMENTOS --------------------*/
+
+.titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #F3E8D4;
+    font-size: 3.9em;
+    font-family: 'inter', serif;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 6rem;
+    margin-top: 15rem;    
+}
+        
+
+hr, .linesEscuchanos {
+    height: 1px;
+    width: 122px;
+    background-color: #f3e8d488;
+    margin-bottom: 8rem;
+    position: relative;
+    left: 15.5vw;
+}
